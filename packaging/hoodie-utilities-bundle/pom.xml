@@ -284,7 +284,7 @@
     <dependency>
       <groupId>${hive.groupid}</groupId>
       <artifactId>hive-jdbc</artifactId>
-      <version>${hive.version}</version>
+      <version>${hive.standalone.version}</version>
       <classifier>standalone</classifier>
       <exclusions>
         <exclusion>

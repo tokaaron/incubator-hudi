@@ -137,6 +137,7 @@
     <hadoop.version>2.7.3</hadoop.version>
     <hive.groupid>org.apache.hive</hive.groupid>
     <hive.version>2.3.1</hive.version>
+    <hive.standalone.version>2.3.1</hive.standalone.version>
     <metrics.version>4.0.2</metrics.version>
     <spark.version>2.1.0</spark.version>
     <avro.version>1.7.7</avro.version>
@@ -830,13 +831,20 @@
 
   </dependencyManagement>
   <repositories>
-    <repository>
+     <repository>
       <id>Maven repository</id>
-      <url>https://central.maven.org/maven2/</url>
+      <url>https://repo.maven.apache.org/maven2/</url>
     </repository>
     <repository>
-      <id>cloudera-repo-releases</id>
-      <url>https://repository.cloudera.com/artifactory/public/</url>
+      <id>emr-5.24.0-artifacts</id>
+      <name>EMR 5.24.0 Releases Repository</name>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+      <url>https://s3.us-west-1.amazonaws.com/us-west-1-emr-artifacts/emr-5.24.0/repos/maven/</url>
     </repository>
   </repositories>
 
