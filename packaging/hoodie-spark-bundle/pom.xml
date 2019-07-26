@@ -177,7 +177,6 @@
                   <exclude>org.apache.hbase:*</exclude>
                   <!-- Just include hive-common, hive-service, hive-metastore and hive-jdbc -->
                   <exclude>org.apache.hive:hive-exec</exclude>
-                  <exclude>org.apache.hive:hive-serde</exclude>
                   <exclude>org.apache.hive:hive-shims</exclude>
                   <exclude>org.apache.spark:*</exclude>
                 </excludes>
@@ -299,6 +298,12 @@
     <dependency>
       <groupId>${hive.groupid}</groupId>
       <artifactId>hive-common</artifactId>
+      <version>${hive.version}</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>${hive.groupid}</groupId>
+      <artifactId>hive-serde</artifactId>
       <version>${hive.version}</version>
       <scope>compile</scope>
     </dependency>
